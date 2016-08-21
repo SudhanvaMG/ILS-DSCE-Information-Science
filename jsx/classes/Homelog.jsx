@@ -13,7 +13,7 @@ var Homelog = React.createClass({
       <div >
        <h3 id="homePageHeader">Continue As : </h3>
        <br/>
-        <Link to="StudentLogin"><RaisedButton  label = "Student" style={style} ></RaisedButton></Link>
+        {/*<Link to="StudentLogin"><RaisedButton  label = "Student" style={style} ></RaisedButton></Link>*/}
         <Link to="AdminLogin"><RaisedButton  label = "Admin"  ></RaisedButton></Link>
       </div>
     );

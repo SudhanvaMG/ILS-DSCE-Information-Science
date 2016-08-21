@@ -27,8 +27,8 @@ var AdminMenu = React.createClass({
           <br/>
           <Link to="add"><MenuItem primaryText="Add Book" /></Link>
           <br/>
-          <Link to="register"><MenuItem primaryText="Register User" /></Link>
-          <br/>
+          {/*<Link to="register"><MenuItem primaryText="Register User" /></Link>*/}
+          {/*<br/>*/}
           <br/>
         </Menu>
       </div>

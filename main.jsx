@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppBar from 'material-ui/lib/app-bar';
-import PanelLeft from './jsx/classes/PanelLeft.jsx'
-import createBrowserHistory from 'history/lib/createBrowserHistory';
 import {Router, Route, IndexRoute, Link} from 'react-router';
-import Card from 'material-ui/lib/card/card';
 import IssueForm from './jsx/classes/Issue.jsx'
 import ReturnBookForm from './jsx/classes/ReturnBook.jsx'
 import AddBookForm from './jsx/classes/AddBook.jsx'
@@ -20,7 +16,6 @@ import AdminLogin from './jsx/classes/AdminLogin.jsx'
 import Admindashboard from './jsx/classes/Admindashboard.jsx'
 import Studentdashboard from './jsx/classes/Studentdashboard.jsx'
 import { browserHistory } from 'react-router'
-import Paper from 'material-ui/lib/paper';
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin();
 
@@ -29,22 +24,18 @@ ReactDOM.render((
     <br/>
     <br/>
     <br/>
-    
       <Router history={browserHistory}>
         <Route name="login"  component={HomePage}>
             <Route name="options" path="/" component={Homelog}/>
             <Route name="StudentLogin" path="/StudentLogin" component={StudentLogin}/>                                                                    
-            <Route name="AdminLogin" path="/AdminLogin" component={AdminLogin}/>                                                                               
-                                                                                    
+            <Route name="AdminLogin" path="/AdminLogin" component={AdminLogin}/>
         </Route>
       </Router>
-    
   </div>
 ),
 document.getElementById('leftPanel'));
 ReactDOM.render((
   <div>
-    
       <Router history={browserHistory}>
         <Route name="admin"  component={Admindashboard}>
             <Route name="issue" path="/issue" component={IssueForm}/>                                                                                  
@@ -59,7 +50,6 @@ ReactDOM.render((
           <Route name="menus" path='/dash' component={StudentMenu}/>
         </Route>  
       </Router>
-    
   </div>
 ),
 document.getElementById('rightPanel'));
